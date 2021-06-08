@@ -23,10 +23,10 @@ public class ViewerCodec extends MappingCodec<UdtValue, Viewer> {
 
     @Nullable
     @Override
-    protected Viewer innerToOuter(@Nullable UdtValue client) {
-        return client == null ? null : new Viewer(
-                client.getString("name"),
-                client.getString("surname")
+    protected Viewer innerToOuter(@Nullable UdtValue viewer) {
+        return viewer == null ? null : new Viewer(
+                viewer.getString("name"),
+                viewer.getString("surname")
         );
     }
 

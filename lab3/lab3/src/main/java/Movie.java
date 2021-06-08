@@ -29,11 +29,11 @@ public class Movie {
 
     public String getTitle() {return title;}
 
-    public Viewer getClient(){
+    public Viewer getViewer(){
         return viewer;
     }
 
-    public void setClient(Viewer viewer){
+    public void setViewer(Viewer viewer){
         this.viewer = viewer;
     }
 
