@@ -41,7 +41,7 @@ public class Main {
             option = scan.nextLine();
             switch (option) {
                 case "0":
-                    System.out.println("Exit");
+                    System.exit(0);
                     break;
                 case "1":
 
